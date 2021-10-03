@@ -1,0 +1,222 @@
+:root {
+    --color-primary: #3b3b3b;
+    --color-secondary: #f7f7f7;
+    --font-color: #ffcc57;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.nav-bar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.nav-bar img {
+    width: 150px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+.menu-bar {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.menu-bar .nome-usuario {
+    color: var(--color-secondary);
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.menu-bar a {
+    color: var(--color-secondary);
+    font-size: 19px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-top: 35px;
+}
+
+.menu-bar a:hover {
+    color: #cccbcb;
+    text-decoration: underline;
+}
+
+.menu-bar a i {
+    color: var(--color-secondary);
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.redes-sociais {
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: rgb(165, 164, 164);
+    font-size: 26px;
+    transition: 0.2s;
+    margin-left: 30px;
+}
+
+.redes-sociais a:hover {
+    color: #e7e3e3;
+    
+}
+
+main.main {
+    padding-bottom: 40px;
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow: auto;
+    float: right;
+    background-color: #eee;
+}
+
+.main h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.border {
+    width: 320px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: var(--font-color);
+}
+
+.edicao form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.edicao label {
+    color: var(--color-primary);
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.edicao form input[type="text"] {
+    width: 400px;
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    color: var(--color-primary);
+}
+
+.edicao form textarea {
+    width: 400px;
+    height: 90px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 17px;
+    color: var(--color-primary);
+}
+
+.edicao form input[type="file"] {
+    display: none;
+}
+
+.edicao .selecao-arquivo {
+    width: 300px;
+    height: 38px;
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    border-radius: 8px;
+    color: var(--color-primary);
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 30px;
+    
+}
+
+.edicao .selecao-arquivo i {
+    margin-right: 5px;
+    color: var(--color-primary);
+}
+
+.edicao input[type="submit"] {
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.edicao input[type="submit"]:hover {
+    color: var(--font-color);
+    background-color: #494848;
+}
+
+.edicao .imagem-produto{
+    margin-top: -30px;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.editado {
+    visibility: hidden;
+    width: 480px;
+    height: 52px;
+    background-color: rgba(57, 194, 80, 0.8);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 25px;
+    transition: 0.2s;
+}
+
+.editado p {
+    font-size: 17px;
+    color: var(--color-secondary);
+    letter-spacing: 1px;
+}
